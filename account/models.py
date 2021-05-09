@@ -16,6 +16,7 @@ class account(models.Model):
     isActive = models.BooleanField(default=True)
     isCustomer = models.BooleanField(default=True)
     isVerified = models.BooleanField(default=False)
+    address = models.CharField(max_length=300)
 
 
 class session(models.Model):
