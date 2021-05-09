@@ -4,7 +4,7 @@ from seller.models import product
 
 # Create your models here.
 class cart(models.Model):
-    customer = models.ForeignKey('account.account', on_delete=models.CASCADE)
+    customer = models.ForeignKey('account.account', on_delete=models.CASCADE, null=True)
     created_at = models.DateTimeField()
 
 class cartItem(models.Model):
