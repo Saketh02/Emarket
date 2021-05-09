@@ -27,6 +27,5 @@ class session(models.Model):
 
 
 class order(models.Model):
-    cart = models.OneToOneField(cart, on_delete=models.CASCADE)
-    customer = models.ForeignKey(account, on_delete=models.CASCADE)
+    cart = models.ForeignKey(cart, on_delete=models.CASCADE)
     order_total = models.FloatField()
